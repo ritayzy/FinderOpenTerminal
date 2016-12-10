@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OpenTerminal.xcodeproj">
+      location = "self:/Users/Adden/Desktop/FinderOpenTerminal/Open iTerm2.xcodeproj">
    </FileRef>
 </Workspace>

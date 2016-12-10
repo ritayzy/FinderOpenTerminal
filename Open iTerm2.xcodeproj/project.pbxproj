@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5096F11DFB154100021FB3 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5096F01DFB154100021FB3 /* FinderSync.swift */; };
+		BE5096F51DFB154100021FB3 /* Open iTerm2 Plugins.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE5096EC1DFB154100021FB3 /* Open iTerm2 Plugins.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */; };
-		DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DD1C7CCBB4005A1529 /* ViewController.swift */; };
 		DD2778E01C7CCBB4005A1529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */; };
 		DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2778E11C7CCBB4005A1529 /* Main.storyboard */; };
-		DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27791B1C7CD144005A1529 /* FinderSync.swift */; };
-		DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD27791E1C7CD144005A1529 /* PBXContainerItemProxy */ = {
+		BE5096F31DFB154100021FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD4195231C7CAA6900330823 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD2779161C7CD144005A1529;
-			remoteInfo = "Open Terminal Finder Extension";
+			remoteGlobalIDString = BE5096EB1DFB154100021FB3;
+			remoteInfo = "Open iTerm2 Plugins";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -33,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */,
+				BE5096F51DFB154100021FB3 /* Open iTerm2 Plugins.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,29 +40,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DD2778D91C7CCBB4005A1529 /* Open Terminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Terminal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5096EC1DFB154100021FB3 /* Open iTerm2 Plugins.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open iTerm2 Plugins.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5096EF1DFB154100021FB3 /* Open_iTerm2_Plugins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_iTerm2_Plugins.entitlements; sourceTree = "<group>"; };
+		BE5096F01DFB154100021FB3 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		BE5096F21DFB154100021FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2778D91C7CCBB4005A1529 /* Open iTerm2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open iTerm2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD2778DD1C7CCBB4005A1529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2778E21C7CCBB4005A1529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2778E41C7CCBB4005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open Terminal Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Open_Terminal_Finder_Extension.entitlements; sourceTree = "<group>"; };
-		DD27791B1C7CD144005A1529 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
-		DD27791D1C7CD144005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD4195681C7CAB4C00330823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DD2778D61C7CCBB4005A1529 /* Frameworks */ = {
+		BE5096E91DFB154100021FB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD2779141C7CD144005A1529 /* Frameworks */ = {
+		DD2778D61C7CCBB4005A1529 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,42 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD2778DA1C7CCBB4005A1529 /* Open Terminal */ = {
+		BE5096ED1DFB154100021FB3 /* Open iTerm2 Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096F01DFB154100021FB3 /* FinderSync.swift */,
+				BE5096F21DFB154100021FB3 /* Info.plist */,
+				BE5096EE1DFB154100021FB3 /* Supporting Files */,
+			);
+			path = "Open iTerm2 Plugins";
+			sourceTree = "<group>";
+		};
+		BE5096EE1DFB154100021FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096EF1DFB154100021FB3 /* Open_iTerm2_Plugins.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD2778DA1C7CCBB4005A1529 /* Open iTerm2 */ = {
 			isa = PBXGroup;
 			children = (
 				DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */,
-				DD2778DD1C7CCBB4005A1529 /* ViewController.swift */,
 				DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */,
 				DD2778E11C7CCBB4005A1529 /* Main.storyboard */,
 				DD2778E41C7CCBB4005A1529 /* Info.plist */,
 				EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */,
 			);
+			name = "Open iTerm2";
 			path = "Open Terminal";
-			sourceTree = "<group>";
-		};
-		DD2779181C7CD144005A1529 /* Open Terminal Finder Extension */ = {
-			isa = PBXGroup;
-			children = (
-				DD27791B1C7CD144005A1529 /* FinderSync.swift */,
-				DD27791D1C7CD144005A1529 /* Info.plist */,
-				DD2779191C7CD144005A1529 /* Supporting Files */,
-			);
-			path = "Open Terminal Finder Extension";
-			sourceTree = "<group>";
-		};
-		DD2779191C7CD144005A1529 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DD4195221C7CAA6900330823 = {
 			isa = PBXGroup;
 			children = (
-				DD2778DA1C7CCBB4005A1529 /* Open Terminal */,
-				DD2779181C7CD144005A1529 /* Open Terminal Finder Extension */,
+				DD2778DA1C7CCBB4005A1529 /* Open iTerm2 */,
+				BE5096ED1DFB154100021FB3 /* Open iTerm2 Plugins */,
 				DD4195671C7CAB4C00330823 /* Frameworks */,
 				DD41952C1C7CAA6900330823 /* Products */,
 			);
@@ -117,8 +115,8 @@
 		DD41952C1C7CAA6900330823 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD2778D91C7CCBB4005A1529 /* Open Terminal.app */,
-				DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */,
+				DD2778D91C7CCBB4005A1529 /* Open iTerm2.app */,
+				BE5096EC1DFB154100021FB3 /* Open iTerm2 Plugins.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,9 +132,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD2778D81C7CCBB4005A1529 /* Open Terminal */ = {
+		BE5096EB1DFB154100021FB3 /* Open iTerm2 Plugins */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal" */;
+			buildConfigurationList = BE5096F61DFB154100021FB3 /* Build configuration list for PBXNativeTarget "Open iTerm2 Plugins" */;
+			buildPhases = (
+				BE5096E81DFB154100021FB3 /* Sources */,
+				BE5096E91DFB154100021FB3 /* Frameworks */,
+				BE5096EA1DFB154100021FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open iTerm2 Plugins";
+			productName = "Open iTerm2 Plugins";
+			productReference = BE5096EC1DFB154100021FB3 /* Open iTerm2 Plugins.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DD2778D81C7CCBB4005A1529 /* Open iTerm2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open iTerm2" */;
 			buildPhases = (
 				DD2778D51C7CCBB4005A1529 /* Sources */,
 				DD2778D61C7CCBB4005A1529 /* Frameworks */,
@@ -146,29 +161,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD27791F1C7CD144005A1529 /* PBXTargetDependency */,
+				BE5096F41DFB154100021FB3 /* PBXTargetDependency */,
 			);
-			name = "Open Terminal";
+			name = "Open iTerm2";
 			productName = "Open Terminal";
-			productReference = DD2778D91C7CCBB4005A1529 /* Open Terminal.app */;
+			productReference = DD2778D91C7CCBB4005A1529 /* Open iTerm2.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD2779211C7CD144005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal Finder Extension" */;
-			buildPhases = (
-				DD2779131C7CD144005A1529 /* Sources */,
-				DD2779141C7CD144005A1529 /* Frameworks */,
-				DD2779151C7CD144005A1529 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Open Terminal Finder Extension";
-			productName = "Open Terminal Finder Extension";
-			productReference = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,26 +174,23 @@
 		DD4195231C7CAA6900330823 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = QP;
 				TargetAttributes = {
+					BE5096EB1DFB154100021FB3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M9C8UP98DA;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
 					DD2778D81C7CCBB4005A1529 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = MK2RQZD575;
-					};
-					DD2779161C7CD144005A1529 = {
-						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = MK2RQZD575;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.Mac = {
-								enabled = 1;
-							};
-						};
+						DevelopmentTeam = M9C8UP98DA;
 					};
 				};
 			};
-			buildConfigurationList = DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */;
+			buildConfigurationList = DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "Open iTerm2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -208,13 +203,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD2778D81C7CCBB4005A1529 /* Open Terminal */,
-				DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */,
+				DD2778D81C7CCBB4005A1529 /* Open iTerm2 */,
+				BE5096EB1DFB154100021FB3 /* Open iTerm2 Plugins */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE5096EA1DFB154100021FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD2778D71C7CCBB4005A1529 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,41 +226,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD2779151C7CD144005A1529 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE5096E81DFB154100021FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5096F11DFB154100021FB3 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD2778D51C7CCBB4005A1529 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */,
-				DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */,
 				DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD2779131C7CD144005A1529 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD27791F1C7CD144005A1529 /* PBXTargetDependency */ = {
+		BE5096F41DFB154100021FB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */;
-			targetProxy = DD27791E1C7CD144005A1529 /* PBXContainerItemProxy */;
+			target = BE5096EB1DFB154100021FB3 /* Open iTerm2 Plugins */;
+			targetProxy = BE5096F31DFB154100021FB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -274,69 +268,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE5096F71DFB154100021FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Open iTerm2 Plugins/Open_iTerm2_Plugins.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M9C8UP98DA;
+				INFOPLIST_FILE = "Open iTerm2 Plugins/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.magikid.openterminal.Open-iTerm2-Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE5096F81DFB154100021FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Open iTerm2 Plugins/Open_iTerm2_Plugins.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M9C8UP98DA;
+				INFOPLIST_FILE = "Open iTerm2 Plugins/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.magikid.openterminal.Open-iTerm2-Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		DD2778F11C7CCBB4005A1529 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = M9C8UP98DA;
 				INFOPLIST_FILE = "Open Terminal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magikid.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		DD2778F21C7CCBB4005A1529 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = M9C8UP98DA;
 				INFOPLIST_FILE = "Open Terminal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magikid.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SWIFT_VERSION = 2.3;
-			};
-			name = Release;
-		};
-		DD2779221C7CD144005A1529 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Open Terminal Finder Extension/Open_Terminal_Finder_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-			};
-			name = Debug;
-		};
-		DD2779231C7CD144005A1529 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Open Terminal Finder Extension/Open_Terminal_Finder_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -353,8 +358,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
@@ -382,6 +389,7 @@
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -398,8 +406,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
@@ -419,13 +429,24 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal" */ = {
+		BE5096F61DFB154100021FB3 /* Build configuration list for PBXNativeTarget "Open iTerm2 Plugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5096F71DFB154100021FB3 /* Debug */,
+				BE5096F81DFB154100021FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open iTerm2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD2778F11C7CCBB4005A1529 /* Debug */,
@@ -434,16 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD2779211C7CD144005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal Finder Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD2779221C7CD144005A1529 /* Debug */,
-				DD2779231C7CD144005A1529 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */ = {
+		DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "Open iTerm2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD4195431C7CAA6900330823 /* Debug */,

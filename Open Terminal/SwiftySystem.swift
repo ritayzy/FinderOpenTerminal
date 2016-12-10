@@ -9,15 +9,15 @@
 import Foundation
 
 struct SwiftySystem {
-    static func execute(path: String?, arguments: [String]?) {
-        let pipe = NSPipe()
+    @discardableResult
+    static func execute(path: String?, arguments: [String]?) -> Process {
+        let task: Process = Process();
+        task.launchPath = path;
+        task.arguments = arguments;
+        task.launch();
         
-        let task = NSTask()
-        task.launchPath = path
-        task.arguments = arguments
-        task.standardOutput = pipe
-        task.launch()
+        task.waitUntilExit();
         
-        task.waitUntilExit()
+        return task;
     }
 }

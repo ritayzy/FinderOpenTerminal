@@ -11,58 +11,65 @@ import Darwin
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationWillFinishLaunching(aNotification: NSNotification) {
-        let appleEventManager:NSAppleEventManager = NSAppleEventManager.sharedAppleEventManager()
-        appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+    
+    let statusItem: NSStatusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength);
+    let menu: NSMenu = NSMenu();
+    
+    public func applicationWillFinishLaunching(_ notification: Notification) {
+        let appleEventManager:NSAppleEventManager = NSAppleEventManager.shared();
+        appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(event: replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL));
+        
+        // 给menu bar添加自定义菜单
+        if let button = statusItem.button {
+            button.image = NSImage(named: "terminal");
+        }
+        
+        menu.addItem(NSMenuItem(title: "About", action: #selector(AppDelegate.aboutMe(sender:)), keyEquivalent: "A"));
+        menu.addItem(NSMenuItem.separator());
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.exitApplication(sender:)), keyEquivalent: "q"));
+        
+        statusItem.menu = menu;
     }
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        SwiftySystem.execute("/usr/bin/pluginkit", arguments: ["pluginkit", "-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
-        SwiftySystem.execute("/usr/bin/killall",arguments: ["Finder"])
-        helpMe()
-        exit(0)
+    public func applicationDidFinishLaunching(_ notification: Notification) {
+        handlePlugin(election: "use");
+//        SwiftySystem.execute(path: "/usr/bin/killall", arguments: ["Finder"]);
     }
     
     func handleGetURLEvent(event: NSAppleEventDescriptor?, replyEvent: NSAppleEventDescriptor?) {
-        if let url = NSURL(string: event!.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!) {
-            
+        if let url = NSURL(string: event!.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!) {
             if let unwrappedPath = url.path {
-                if(NSFileManager.defaultManager().fileExistsAtPath(unwrappedPath)) {
-                    do {
-                        let rcContent = "cd \""+unwrappedPath+"\" \n" +
-                            "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
-                            "exec bash -c \"clear;printf '\\e[3J';bash --rcfile $rcFile\""
-                        
-                        try (rcContent).writeToFile("/tmp/openTerminal", atomically: true, encoding: NSUTF8StringEncoding)
-                        try NSFileManager.defaultManager().setAttributes([NSFilePosixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
-                            SwiftySystem.execute("/usr/bin/open", arguments: ["-b", "com.apple.terminal", "/tmp/openTerminal"])
-                    } catch _ {}
-                    
+                if (FileManager.default.fileExists(atPath: unwrappedPath)) {
+                    SwiftySystem.execute(path: "/bin/bash", arguments: ["-c", "open -F -n -b 'com.googlecode.iterm2' " + unwrappedPath]);
                 } else {
-                    helpMe("The specified directory does not exist")
+                    help(message: "The specified directory does not exist");
                 }
-                
             }
         }
-        
-        exit(0)
     }
     
-    private func helpMe(customMessage: String) {
-        let alert = NSAlert ()
+    @IBAction func exitApplication(sender: AnyObject?) {
+        handlePlugin(election: "ignore");
+        exit(0);
+    }
+    
+    @IBAction func aboutMe(sender: AnyObject?) {
+        help(message: "This application adds a Open iTerm2 item in every Finder context menus.\n\n(c) Quentin PÂRIS 2016 - http://quentin.paris");
+    }
+    
+    private func help(message: String) {
+        let alert: NSAlert = NSAlert();
         alert.messageText = "Information"
-        alert.informativeText = customMessage
-        alert.runModal()
+        alert.informativeText = message;
+        alert.runModal();
     }
     
-    private func helpMe() {
-        helpMe("This application adds a Open Terminal item in every Finder context menus.\n\n(c) Quentin PÂRIS 2016 - http://quentin.paris")
+    private func handlePlugin(election: String) {
+        SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["-e", election, "-i", "com.magikid.openterminal.Open-iTerm2-Plugins"]);
     }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+    
+    public func applicationWillTerminate(_ notification: Notification) {
+        exitApplication(sender: nil);
     }
-
-
 }
 
